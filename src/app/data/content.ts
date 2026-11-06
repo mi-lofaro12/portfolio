@@ -84,21 +84,20 @@ const PROJECTS: Project[] = [
 
 export const CONTENT: Content = {
   profile: {
-    name: 'Il Tuo Nome',
+    name: 'Michele Lofaro',
     initials: 'TN',
     role: 'Software Developer',
     headline: 'Sviluppo software solido, leggibile e pensato per durare nel tempo.',
-    intro:
-      'Software developer con esperienza in ambito enterprise. Lavoro in team strutturati su applicazioni usate ogni giorno da molte persone.',
-    email: 'ciao@iltuosito.it',
+    intro: 'Software developer con esperienza in ambito enterprise. Lavoro in team strutturati su applicazioni usate ogni giorno da molte persone.',
+    email: 'michele.lofaro12@gmail.com',
     location: 'Italia',
     available: false,
-    cvUrl: 'cv.pdf',
+    cvUrl: 'CV.pdf',
     about: [
       'Sono un software developer e lavoro in azienda in team di sviluppo, dall\'analisi dei requisiti al rilascio. Mi piace il codice chiaro, le soluzioni semplici e il lavoro di squadra.',
       'Fuori dal lavoro studio nuove tecnologie e sperimento con progetti personali per tenermi aggiornato.',
     ],
-    chips: ['Angular', 'TypeScript', 'Node.js'],
+    chips: ['Angular', 'Java', 'PostgresSQL', 'Alfresco'],
   },
 
   nav: [
@@ -107,7 +106,7 @@ export const CONTENT: Content = {
     { id: 'services', label: 'Cosa faccio' },
     { id: 'resume', label: 'Curriculum' },
     { id: 'hobbies', label: 'Hobby' },
-    ...(PROJECTS.length ? [{ id: 'portfolio', label: 'Progetti' }] : []),
+    // ...(PROJECTS.length ? [{ id: 'portfolio', label: 'Progetti' }] : []),
     { id: 'contact', label: 'Contatti' },
   ],
 
@@ -117,7 +116,7 @@ export const CONTENT: Content = {
   ],
 
   stats: [
-    { value: '6+', label: 'Anni di esperienza' },
+    { value: '4+', label: 'Anni di esperienza' },
     { value: '10+', label: 'Tecnologie usate' },
     { value: '3', label: 'Team in cui ho lavorato' },
     { value: '2', label: 'Certificazioni' },

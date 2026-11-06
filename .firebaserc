@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "michelelofaro": {
+      "hosting": {
+        "app": [
+          "michelelofaro"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "michelelofaro"
+  }
+}
