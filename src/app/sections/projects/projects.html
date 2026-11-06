@@ -1,0 +1,38 @@
+<div class="container">
+  <div class="section-head" reveal>
+    <p class="section-eyebrow">Progetti</p>
+    <h2>Lavori selezionati</h2>
+    <div class="filters">
+      @for (cat of categories; track cat) {
+        <button
+          type="button"
+          class="filter"
+          [class.active]="category() === cat"
+          (click)="category.set(cat)"
+        >
+          {{ cat }}
+        </button>
+      }
+    </div>
+  </div>
+
+  <div class="grid cols-3">
+    @for (p of filtered(); track p.slug) {
+      <a class="project" [routerLink]="['/progetti', p.slug]" reveal>
+        <div class="thumb" [style.background]="bg(p)">
+          <span class="thumb-label">{{ p.title }}</span>
+          <span class="thumb-cat">{{ p.category }}</span>
+        </div>
+        <div class="project-body">
+          <h3>{{ p.title }}</h3>
+          <p class="muted">{{ p.summary }}</p>
+          <div class="tags">
+            @for (t of p.tags; track t) {
+              <span class="tag">{{ t }}</span>
+            }
+          </div>
+        </div>
+      </a>
+    }
+  </div>
+</div>

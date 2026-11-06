@@ -1,0 +1,15 @@
+<div class="container two-col">
+  <div reveal>
+    <p class="section-eyebrow">Chi sono</p>
+    <h2>Codice pulito, prodotti che funzionano.</h2>
+  </div>
+  <div reveal>
+    @for (p of c.profile.about; track p) {
+      <p class="muted">{{ p }}</p>
+    }
+    <ul class="info-list">
+      <li><span>Email</span><a [href]="'mailto:' + c.profile.email">{{ c.profile.email }}</a></li>
+      <li><span>Luogo</span>{{ c.profile.location }}</li>
+    </ul>
+  </div>
+</div>

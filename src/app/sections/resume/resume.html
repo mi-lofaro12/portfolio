@@ -1,0 +1,49 @@
+<div class="container">
+  <div class="section-head" reveal>
+    <p class="section-eyebrow">Curriculum</p>
+    <h2>Competenze ed esperienza</h2>
+  </div>
+
+  <div class="resume-grid">
+    <div class="card" reveal>
+      <h3>Competenze</h3>
+      @for (s of c.skills; track s.name) {
+        <div class="skill">
+          <div class="skill-top"><span>{{ s.name }}</span><span>{{ s.level }}%</span></div>
+          <div class="bar"><div class="bar-fill" [style.width.%]="s.level"></div></div>
+        </div>
+      }
+      <div class="tags tools">
+        @for (t of c.tools; track t) {
+          <span class="tag">{{ t }}</span>
+        }
+      </div>
+    </div>
+
+    <div reveal>
+      <h3 class="col-title">Esperienza</h3>
+      <ol class="timeline">
+        @for (e of c.experience; track e.title + e.period) {
+          <li>
+            <span class="period">{{ e.period }}</span>
+            <h4>{{ e.title }}</h4>
+            <p class="place">{{ e.place }}</p>
+            <p class="muted">{{ e.text }}</p>
+          </li>
+        }
+      </ol>
+
+      <h3 class="col-title">Formazione</h3>
+      <ol class="timeline">
+        @for (e of c.education; track e.title + e.period) {
+          <li>
+            <span class="period">{{ e.period }}</span>
+            <h4>{{ e.title }}</h4>
+            <p class="place">{{ e.place }}</p>
+            <p class="muted">{{ e.text }}</p>
+          </li>
+        }
+      </ol>
+    </div>
+  </div>
+</div>

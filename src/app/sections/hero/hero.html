@@ -1,0 +1,44 @@
+<div class="container hero-grid">
+  <div class="hero-text" reveal>
+    @if (c.profile.available) {
+      <span class="badge"><span class="dot"></span> Disponibile per nuovi progetti</span>
+    }
+    <p class="eyebrow">Ciao, sono</p>
+    <h1>
+      <span class="grad">{{ c.profile.name }}</span><br />
+      {{ c.profile.role }}
+    </h1>
+    <p class="lead">{{ c.profile.headline }}</p>
+    <p class="muted">{{ c.profile.intro }}</p>
+    <div class="btn-row">
+      <a class="btn primary" [routerLink]="['/']" fragment="resume">Esperienza e competenze</a>
+      <a class="btn ghost" [routerLink]="['/']" fragment="contact">Contattami</a>
+      <a class="btn link" [href]="c.profile.cvUrl" download>Scarica il CV ↓</a>
+    </div>
+    <div class="socials">
+      @for (s of c.socials; track s.label) {
+        <a [href]="s.url" target="_blank" rel="noopener noreferrer">{{ s.label }}</a>
+      }
+    </div>
+  </div>
+
+  <div class="hero-visual" reveal>
+    <div class="avatar-card">
+      <div class="avatar">{{ c.profile.initials }}</div>
+      @for (chip of c.profile.chips; track chip; let i = $index) {
+        <span class="float-chip" [class]="'chip-' + i">{{ chip }}</span>
+      }
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="stats" reveal>
+    @for (s of c.stats; track s.label) {
+      <div class="stat">
+        <strong>{{ s.value }}</strong>
+        <span>{{ s.label }}</span>
+      </div>
+    }
+  </div>
+</div>

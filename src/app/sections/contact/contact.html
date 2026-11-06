@@ -1,0 +1,21 @@
+<div class="container two-col">
+  <div reveal>
+    <p class="section-eyebrow">Contatti</p>
+    <h2>Mettiamoci in contatto</h2>
+    <p class="muted">
+      Vuoi parlarmi di un'opportunità, fare due chiacchiere tecniche o semplicemente salutare? Scrivimi: ti rispondo appena possibile.
+    </p>
+    <ul class="info-list">
+      <li><span>Email</span><a [href]="'mailto:' + c.profile.email">{{ c.profile.email }}</a></li>
+      <li><span>Luogo</span>{{ c.profile.location }}</li>
+    </ul>
+  </div>
+
+  <form class="card form" reveal (submit)="send($event, name.value, email.value, message.value)">
+    <label>Nome <input #name type="text" required autocomplete="name" /></label>
+    <label>Email <input #email type="email" required autocomplete="email" /></label>
+    <label>Messaggio <textarea #message rows="5" required></textarea></label>
+    <button class="btn primary" type="submit">Invia messaggio</button>
+    <p class="hint">Si aprirà il tuo programma di posta con il messaggio già compilato.</p>
+  </form>
+</div>
