@@ -1,0 +1,39 @@
+/* Elenco attività dentro la timeline */
+.timeline .activities {
+  margin: 14px 0 0;
+  padding: 14px 18px;
+  display: grid;
+  gap: 10px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+}
+.timeline .activities li {
+  position: relative;
+  margin: 0;
+  padding-left: 28px;
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+.timeline .activities li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 18px;
+  height: 18px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--accent) 14%, transparent);
+  color: var(--accent);
+  font-size: 0.7rem;
+  font-weight: 700;
+  box-shadow: none;
+}
+.timeline .activities strong {
+  color: var(--text);
+  font-weight: 600;
+  margin-right: 0.35em;
+}

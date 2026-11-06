@@ -29,6 +29,19 @@
             <h4>{{ e.title }}</h4>
             <p class="place">{{ e.place }}</p>
             <p class="muted">{{ e.text }}</p>
+            @if (e.activities?.length) {
+              <ul class="activities">
+                @for (activity of e.activities; track activity) {
+                  @let p = parts(activity);
+                  <li>
+                    @if (p.label) {
+                      <strong>{{ p.label }}:</strong>
+                    }
+                    {{ p.text }}
+                  </li>
+                }
+              </ul>
+            }
           </li>
         }
       </ol>
@@ -41,6 +54,19 @@
             <h4>{{ e.title }}</h4>
             <p class="place">{{ e.place }}</p>
             <p class="muted">{{ e.text }}</p>
+            @if (e.activities?.length) {
+              <ul class="activities">
+                @for (activity of e.activities; track activity) {
+                  @let p = parts(activity);
+                  <li>
+                    @if (p.label) {
+                      <strong>{{ p.label }}:</strong>
+                    }
+                    {{ p.text }}
+                  </li>
+                }
+              </ul>
+            }
           </li>
         }
       </ol>

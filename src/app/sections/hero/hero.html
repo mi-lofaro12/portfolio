@@ -24,7 +24,9 @@
 
   <div class="hero-visual" reveal>
     <div class="avatar-card">
-      <div class="avatar">{{ c.profile.initials }}</div>
+      <div class="avatar">
+        <img src="/personal-image.jpeg" alt="" width="100px">
+      </div>
       @for (chip of c.profile.chips; track chip; let i = $index) {
         <span class="float-chip" [class]="'chip-' + i">{{ chip }}</span>
       }
