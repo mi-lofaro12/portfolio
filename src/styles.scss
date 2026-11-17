@@ -137,7 +137,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .chip-1 { bottom: 14%; left: -2%; animation-delay: 1s; }
 .chip-2 { top: 42%; right: -5%; animation-delay: 2s; }
 .chip-3 { top: 8%; right: -8%; animation-delay: 2s; }
-.chip-4 { bottom: 14%; right: -12%; animation-delay: 2s; }
+.chip-4 { bottom: 14%; right: -3%; animation-delay: 2s; }
 @keyframes float { 50% { transform: translateY(-10px); } }
 @keyframes morph { 50% { border-radius: 55% 45% 45% 55% / 45% 55% 45% 55%; } }
 

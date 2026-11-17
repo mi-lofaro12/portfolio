@@ -97,7 +97,7 @@ export const CONTENT: Content = {
       'Sono un software developer e lavoro in azienda in team di sviluppo, dall\'analisi dei requisiti al rilascio. Mi piace il codice chiaro, le soluzioni semplici e il lavoro di squadra.',
       'Fuori dal lavoro studio nuove tecnologie e sperimento con progetti personali per tenermi aggiornato.',
     ],
-    chips: ['Angular', 'Java', 'Docker', 'Alfresco', 'PostgresSQL'],
+    chips: ['Angular', 'Java', 'Docker', 'PostgresSQL', 'Alfresco'],
   },
 
   nav: [
