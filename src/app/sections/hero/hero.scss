@@ -1,0 +1,11 @@
+.avatar-card { position: relative; width: min(380px, 100%); aspect-ratio: 1; }
+.blob {
+  position: absolute; inset: 0; overflow: hidden;
+  border-radius: 40% 60% 55% 45% / 50% 45% 55% 50%;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));  box-shadow: var(--shadow);
+  animation: morph 10s ease-in-out infinite;
+}
+.photo {
+  position: absolute; left: 50%; bottom: 0; transform: translateX(-50%);
+  height: 95%; width: auto; max-width: none;
+}

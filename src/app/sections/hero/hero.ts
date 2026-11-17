@@ -7,6 +7,7 @@ import { Reveal } from '../../shared/reveal';
   selector: 'app-hero',
   imports: [RouterLink, Reveal],
   templateUrl: './hero.html',
+  styleUrl: './hero.scss',
   host: { id: 'home', class: 'hero' },
 })
 export class Hero {

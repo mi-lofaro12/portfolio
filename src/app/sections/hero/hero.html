@@ -24,15 +24,14 @@
 
   <div class="hero-visual" reveal>
     <div class="avatar-card">
-      <div class="avatar">
-        <img src="/personal-image.jpeg" alt="" width="100px">
+      <div class="blob">
+        <img class="photo" src="profile_home.png" alt="Michele Lofaro" />
       </div>
       @for (chip of c.profile.chips; track chip; let i = $index) {
         <span class="float-chip" [class]="'chip-' + i">{{ chip }}</span>
       }
     </div>
   </div>
-</div>
 
 <div class="container">
   <div class="stats" reveal>

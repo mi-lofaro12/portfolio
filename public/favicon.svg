@@ -1,1 +1,26 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#6c5ce7"/><text x="32" y="43" font-family="Arial, sans-serif" font-size="32" font-weight="700" text-anchor="middle" fill="#fff">&lt;/&gt;</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="425 388 863 488" role="img" aria-label="Michele Lofaro">
+  <defs>
+    <linearGradient id="gm" gradientUnits="userSpaceOnUse" x1="440" y1="400" x2="790" y2="840">
+      <stop offset="0" stop-color="#0f55ff"/>
+      <stop offset="0.5" stop-color="#9a3df5"/>
+      <stop offset="1" stop-color="#ff4f9a"/>
+    </linearGradient>
+    <linearGradient id="gl" gradientUnits="userSpaceOnUse" x1="960" y1="400" x2="1000" y2="866">
+      <stop offset="0" stop-color="#ff8f26"/>
+      <stop offset="1" stop-color="#ff5c7c"/>
+    </linearGradient>
+    <linearGradient id="gf" gradientUnits="userSpaceOnUse" x1="865" y1="866" x2="1278" y2="760">
+      <stop offset="0" stop-color="#9a3df5"/>
+      <stop offset="0.25" stop-color="#ff5c7c"/>
+      <stop offset="1" stop-color="#ffb12a"/>
+    </linearGradient>
+    <linearGradient id="gc" gradientUnits="userSpaceOnUse" x1="790" y1="866" x2="790" y2="660">
+      <stop offset="0" stop-color="#c63de6"/>
+      <stop offset="1" stop-color="#14003c"/>
+    </linearGradient>
+  </defs>
+  <polygon fill="url(#gm)" points="435,398 778,648 695,710 527,586 527,790 435,866"/>
+  <polygon fill="url(#gl)" points="958,398 958,760 865,866 865,588 778,648 700,590"/>
+  <polygon fill="url(#gf)" points="958,760 1278,760 1152,866 865,866"/>
+  <polygon fill="url(#gc)" points="746,715 836,652 836,866 746,866"/>
+</svg>
